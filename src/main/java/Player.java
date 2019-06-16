@@ -31,4 +31,8 @@ public class Player {
     public int getHandSize() {
         return this.hand.size();
     }
+
+    public boolean blackjack() {
+        return (this.getHandSize() == 2 && this.valueOFHand() == 21);
+    }
 }

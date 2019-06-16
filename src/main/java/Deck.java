@@ -31,7 +31,17 @@ public class Deck {
         return this.deckOfCards;
     }
 
-//    public boolean cardsAreUniqueInDeck(){
+    public String dealCard() {
+        Card card = this.deckOfCards.remove(0);
+        return "You have the " + card.getRank().toString() + " of " + card.getSuit().toString() + ". " + card.getRankValue() + " points to Gryffindor!";
+    }
+
+    public ArrayList<Card> shuffler() {
+        Collections.shuffle(this.populateDeck());
+        return this.deckOfCards;
+    }
+
+    //    public boolean cardsAreUniqueInDeck(){
 //        this.populateDeck();
 //        for (Card comparisonCard : this.deckOfCards) {
 //            for (Card card : this.deckOfCards) {
@@ -42,16 +52,6 @@ public class Deck {
 //        }
 //        return true;
 //    }
-
-    public ArrayList<Card> shuffler() {
-        Collections.shuffle(this.populateDeck());
-        return this.deckOfCards;
-    }
-
-    public String dealCard() {
-        Card card = this.deckOfCards.remove(0);
-        return "You have the " + card.getRank().toString() + " of " + card.getSuit().toString() + ". " + card.getRankValue() + " points to Gryffindor!";
-    }
 
 //    public void shuffleArray(ArrayList<Card> ar)
 //    {
