@@ -31,9 +31,9 @@ public class Deck {
         return this.deckOfCards;
     }
 
-    public String dealCard() {
-        Card card = this.deckOfCards.remove(0);
-        return "You have the " + card.getRank().toString() + " of " + card.getSuit().toString() + ". " + card.getRankValue() + " points to Gryffindor!";
+    public Card dealCard() {
+        return this.deckOfCards.remove(0);
+//        return "You have the " + card.getRank().toString() + " of " + card.getSuit().toString() + ". " + card.getRankValue() + " points to Gryffindor!";
     }
 
     public ArrayList<Card> shuffler() {

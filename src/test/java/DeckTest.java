@@ -41,7 +41,7 @@ public class DeckTest {
     public void canDealCardFromDeck() {
         deck.shuffler();
         boolean result = deck.dealCard().getClass().isInstance(card1);
-//        assertTrue(result);
+        assertTrue(result);
         assertEquals(51, deck.cardCount());
     }
 
