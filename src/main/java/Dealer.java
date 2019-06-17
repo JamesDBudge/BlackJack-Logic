@@ -47,6 +47,8 @@ public class Dealer {
         return handValue;
     }
 
-    public 
+    public boolean dealerIsWinner() {
+
+    }
 
 }
